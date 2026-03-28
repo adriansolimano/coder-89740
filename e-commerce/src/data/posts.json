@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "titulo": "Presentación del negocio",
+    "descripcion": "Quién sos, qué ofrecés y qué te diferencia.",
+    "tipo": "branding"
+  },
+  {
+    "id": 2,
+    "titulo": "Producto o servicio destacado",
+    "descripcion": "Mostrar el principal producto o experiencia.",
+    "tipo": "promocional"
+  },
+  {
+    "id": 3,
+    "titulo": "Testimonios de clientes",
+    "descripcion": "Opiniones reales que generen confianza.",
+    "tipo": "social_proof"
+  },
+  {
+    "id": 4,
+    "titulo": "Antes y después",
+    "descripcion": "Comparación visual del cambio o resultado.",
+    "tipo": "visual"
+  },
+  {
+    "id": 5,
+    "titulo": "Promoción o descuento",
+    "descripcion": "Oferta limitada para generar urgencia.",
+    "tipo": "promocional"
+  },
+  {
+    "id": 6,
+    "titulo": "Detrás de escena",
+    "descripcion": "Cómo trabajás o cómo funciona el negocio.",
+    "tipo": "branding"
+  },
+  {
+    "id": 7,
+    "titulo": "Post educativo",
+    "descripcion": "Tips o información útil relacionada al rubro.",
+    "tipo": "educativo"
+  },
+  {
+    "id": 8,
+    "titulo": "Preguntas frecuentes",
+    "descripcion": "Responder dudas comunes de clientes.",
+    "tipo": "informativo"
+  },
+  {
+    "id": 9,
+    "titulo": "Contenido interactivo",
+    "descripcion": "Encuestas, preguntas o dinámicas con la audiencia.",
+    "tipo": "engagement"
+  },
+  {
+    "id": 10,
+    "titulo": "Llamado a la acción",
+    "descripcion": "Invitar a reservar, comprar o consultar.",
+    "tipo": "conversion"
+  }
+]
