@@ -1,11 +1,12 @@
 import { useEffect } from "react"
+import { Link } from 'react-router'
 
 const Post = (props) => {
 
-    const { id, titulo, descripcion, tipo, callback } = props
+    const { id, titulo, descripcion, tipo, removeCallback } = props
 
     const handleRemove = () => {
-        callback(id)
+        removeCallback(id)
     }
 
     useEffect(() => {
@@ -23,6 +24,7 @@ const Post = (props) => {
             <td>{descripcion}</td>
             <td>{tipo}</td>
             <td><button onClick={handleRemove}>Eliminar</button></td>
+            <td><Link to={`/posts/${id}`}>Ver</Link></td>
         </tr>
     )
 

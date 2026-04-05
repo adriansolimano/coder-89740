@@ -1,6 +1,4 @@
-import { useEffect, useState } from 'react';
-import { getPosts } from '../services/json/posts'
-import Post from './Post';
+import Post from '../components/Post';
 import usePosts from '../hooks/usePosts';
 
 const Posts = () => {
@@ -21,7 +19,7 @@ const Posts = () => {
                                 titulo={post.titulo} 
                                 descripcion={post.descripcion} 
                                 tipo={post.tipo}
-                                callback={removePost}
+                                removeCallback={removePost}
                             />
                         )
                     }) }
