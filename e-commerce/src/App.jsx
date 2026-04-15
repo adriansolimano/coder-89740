@@ -17,26 +17,29 @@ function App() {
     setInitValue(parseInt(event.target.value))
   }
 
- 
- 
+  const handleLogin = () => {
+    console.log('Login')
+    // 
+  }
+
   return(
     <>
-      <nav>
-        <ul>
-          <li>
-            <NavLink to="/users">Users</NavLink>
-          </li>
-          <li>
-            <NavLink to="/posts">Posts</NavLink>
-          </li>
-        </ul>
-      </nav>
+        <nav>
+          <ul>
+            <li>
+              <NavLink to="/users">Users</NavLink>
+            </li>
+            <li>
+              <NavLink to="/posts">Posts</NavLink>
+            </li>
+          </ul>
+        </nav>
 
-      <Routes>
-        <Route path="/users" element={<Users />} />
-        <Route path="/posts" element={<Posts />} />
-        <Route path="/posts/:postId" element={<PostDetail />} />
-      </Routes>
+        <Routes>
+          <Route path="/users" element={<Users />} />
+          <Route path="/posts" element={<Posts />} />
+          <Route path="/posts/:postId" element={<PostDetail />} />
+        </Routes>
     </>
   )
 

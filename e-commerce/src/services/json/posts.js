@@ -2,7 +2,7 @@ import posts from '../../data/posts.json'
 
 const error = false
 
-const getPosts = () => {
+const getPosts = (page) => {
 
     return new Promise((resolve, reject) => {
 
@@ -51,3 +51,6 @@ const getPost = (id) => {
 }
 
 export { getPost, updatePost, getPosts, removePost }
+
+// http://localhost:3000/api/posts?offset=0&limit=10 acá traigo los primeros 10
+// http://localhost:3000/api/posts?offset=10&limit=10 acá traigo del 11 al 20

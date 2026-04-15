@@ -12,8 +12,20 @@ const Post = (props) => {
     useEffect(() => {
         console.log(id);
 
+        // const interval = setInterval(() => {
+        //     console.log('interval');
+        // }, 1000)
+
+        document.addEventListener('click', () => {
+            console.log('click');
+        })
+
         return () => {
-            console.log('unmount');     
+            console.log('unmount'); 
+            // clearInterval(interval)
+            document.removeEventListener('click', () => {
+                console.log('click');
+            })
         }
     }, [])
  

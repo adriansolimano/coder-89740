@@ -4,10 +4,11 @@ import { getPosts } from "../services/json/posts"
 const usePosts = () => {
 
     const [ posts, setPosts ] = useState(undefined)
+    const [ page, setPage ] = useState(1)
 
     useEffect(() => {
 
-        getPosts().then(resp => {
+        getPosts(page).then(resp => {
             setPosts(resp.data)
         }).catch(error => {
             console.log(error); 
@@ -39,7 +40,7 @@ const usePosts = () => {
 
     }
 
-    return { posts, handleAddPost, removePost }
+    return { posts, page, setPage, handleAddPost, removePost }
 
 }
 
